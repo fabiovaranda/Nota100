@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id          = "pt.fabiovaranda.app"
+	version 	= "1.0.0">
+
+	<!-- App info -->
+	<name>Nota100</name>
+	<description>App onde podes desenvolver os teus conhecimentos teóricos sobre leis de jogo de Futebol 11 (PT e Inglês) e Futsal.</description>
+	<author href="http://www.fabiovaranda.pt" email="info@fabiovaranda.pt">Fábio Varanda</author>
+
+	<!-- Platforms -->
+	<platform name="android" />
+	<!--<platform name="ios" />
+	<platform name="wp8" />-->
+
+
+	<!-- Preferences -->
+	<preference name="phonegap-version" value="cli-5.2.0" />
+	<preference name="orientation" value="landscape" />
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="target-device" value="handset" />
+	<preference name="android-build-tool" value="gradle" />
+	<preference name="android-minSdkVersion" value="15" />
+
+	<preference name="SplashScreen" value="splash"/>
+	<preference name="SplashScreenDelay" value="3000" />
+	<preference name="SplashMaintainAspectRatio" value="true" />
+
+	<!-- Permissions -->
+	<feature name="http://api.phonegap.com/1.0/device"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+
+	<!-- Whitelist -->
+	<access origin="*" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+
+	<!-- Plugins -->
+	<gap:plugin name="cordova-plugin-device" source="npm" version="1.0.1" />
+	<gap:plugin name="cordova-plugin-dialogs" source="npm" version="1.1.1" />
+	<gap:plugin name="cordova-plugin-geolocation" source="npm" version="1.0.1" />
+	<gap:plugin name="cordova-plugin-statusbar" source="npm" version="1.0.1" />
+	<gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
+	<gap:plugin name="cordova-plugin-screen-orientation" source="npm" version="1.4.0" />
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
+	<gap:plugin name="cordova-plugin-bluetooth-status" source="npm" version="1.0.3" />
+	<gap:plugin name="cordova-plugin-network-information" source="npm" version="1.1.0" />
+	<gap:plugin name="cordova-plugin-email-composer" source="npm" version="0.8.2" />
+	<gap:plugin name="cordova-sqlite-storage" source="npm" version="0.7.14" />
+	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+	<gap:plugin name="cordova-plugin-progress-indicator" source="npm" />
+	
+
+	
+	<platform name="android">
+		<!-- Icons -->
+	  	<icon src="lib/foundation/img/icon.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="lib/foundation/img/icon.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="lib/foundation/img/icon.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="lib/foundation/img/icon.png" gap:platform="android" gap:density="xhdpi" />
+		<!-- splashscreen -->
+	  	<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="ldpi"/>
+	  	<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="mdpi"/>
+		<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="hdpi"/>
+		<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="xhdpi"/> 
+		<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="xxhdpi"/> 
+	</platform>
+
+	
+		
+		
+		
+</widget>
