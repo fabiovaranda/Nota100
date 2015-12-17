@@ -98,8 +98,8 @@
         		navigator.splashscreen.show();
         	  
               if(window.sqlitePlugin !== undefined){              
-              	 db = window.sqlitePlugin.openDatabase({name: "DB" , androidDatabaseImplementation: 2, androidLockWorkaround: 1});
-                 //db.executeSql(" drop table if exists perguntas " );
+              	 db = window.sqlitePlugin.openDatabase({name: "DB" , androidDatabaseImplementation:2, androidLockWorkaround:1});
+                 
                  db.transaction(function(tx){                    
                  	var query = "CREATE TABLE if not exists perguntas (id integer not null, texto varchar(400) not null, resposta1 varchar(400) not null, resposta2 varchar(400) not null, resposta3 varchar(400) not null, resposta4 varchar(400) null, respostaCorreta integer not null )";
                  	tx.executeSql(query);	
@@ -138,6 +138,14 @@
 
       $('#nota100').click(function(){
         stats(db);
+      });
+
+      $( document ).ajaxStart(function() {
+        SpinnerDialog.show();
+      });
+
+      $( document ).ajaxStop(function() {
+        SpinnerDialog.hide();
       });
 		</script>
 
