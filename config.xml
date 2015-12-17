@@ -52,6 +52,7 @@
 	<gap:plugin name="cordova-sqlite-storage" source="npm" version="0.7.14" />
 	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 	<gap:plugin name="cordova-plugin-progress-indicator" source="npm" />
+	<gap:plugin name="cordova-plugin-spinnerdialog" source="npm" />
 	
 
 	
