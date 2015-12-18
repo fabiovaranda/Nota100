@@ -115,6 +115,8 @@
                  	tx.executeSql(query);	
                  },function(err){
                  	alert("index error "+err.message);
+                 },function(){
+                  //navigator.splashscreen.hide();
                  });
 
                 //verifica se há utilizador com login efetuado
@@ -122,9 +124,6 @@
                 db.executeSql(query, [], function(res){                    
                     if (res.rows.item(0).a >= 1){
                         $('#divMenu').show();
-                        /*updateTables("perguntas", db); 
-                        updateTables("perguntasFutsal", db); 
-                        updateTables("perguntasIngles", db); */
                         stats(db);
                     }else
                         $('#divLogin').show();
@@ -138,7 +137,7 @@
 
       $('#nota100').click(function(){
         stats(db);
-        checkConnection();
+        //checkConnection();
       });
 
       
