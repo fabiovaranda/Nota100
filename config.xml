@@ -56,16 +56,16 @@
 	
 	<platform name="android">
 		<!-- Icons -->
-	  	<icon src="lib/foundation/img/icon.png" gap:platform="android" gap:density="ldpi" />
-		<icon src="lib/foundation/img/icon.png" gap:platform="android" gap:density="mdpi" />
-		<icon src="lib/foundation/img/icon.png" gap:platform="android" gap:density="hdpi" />
-		<icon src="lib/foundation/img/icon.png" gap:platform="android" gap:density="xhdpi" />
+	  	<icon src="lib/img/icon.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="lib/img/icon.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="lib/img/icon.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="lib/img/icon.png" gap:platform="android" gap:density="xhdpi" />
 		<!-- splashscreen -->
-	  	<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="ldpi"/>
-	  	<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="mdpi"/>
-		<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="hdpi"/>
-		<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="xhdpi"/> 
-		<splash src='lib/foundation/img/splash.png'  gap:platform="android" gap:qualifier="xxhdpi"/> 
+	  	<splash src='lib/img/splash.png'  gap:platform="android" gap:qualifier="ldpi"/>
+	  	<splash src='lib/img/splash.png'  gap:platform="android" gap:qualifier="mdpi"/>
+		<splash src='lib/img/splash.png'  gap:platform="android" gap:qualifier="hdpi"/>
+		<splash src='lib/img/splash.png'  gap:platform="android" gap:qualifier="xhdpi"/> 
+		<splash src='lib/img/splash.png'  gap:platform="android" gap:qualifier="xxhdpi"/> 
 	</platform>
 	
 		
