@@ -3160,7 +3160,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: black; }
   .top-bar a {
     color: #2199e8; }
   .top-bar input {
