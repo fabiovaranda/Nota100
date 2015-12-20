@@ -20,31 +20,36 @@
         <div class="title-bar-title">Menu</div>
       </div>
 
-    	<div id='divMenu' style='display:block; z-index:100'>
+    	<div id='divMenu' style='display:none; z-index:100'>
     		<div class="top-bar">
           <div class="top-bar-left">
-            <ul class="menu">
-              <li class='menu-text'><a id='nota100' href='#'>Nota100</a></li>
-            </ul>
-          </div>
-  				<div class="top-bar-right">
-  					<ul class="menu">
-  						<li><a id='perguntasFutebol' href='#'>Futebol</a></li>
+            <ul class="menu hide-for-small-only">
+              <li><a id='nota100' href='#'>Início</a></li>
+              <li><a id='perguntasFutebol' href='#'>Futebol</a></li>
               <li><a id='perguntasFutebolIng' href='#'>Soccer</a></li>
               <li><a id='perguntasFutsal' href='#'>Futsal</a></li>
               <li><a id='pesquisar' href='#'>Pesquisar</a></li>
               <li><a id='atualizarBD' href='#'>Atualizar BD</a></li>
-  					</ul>
-  				</div>
+            </ul>
+            <ul class="vertical menu hide-for-medium">
+              <li><a id='nota100' href='#'>Início</a></li>
+              <li><a id='perguntasFutebol' href='#'>Futebol</a></li>
+              <li><a id='perguntasFutebolIng' href='#'>Soccer</a></li>
+              <li><a id='perguntasFutsal' href='#'>Futsal</a></li>
+              <li><a id='pesquisar' href='#'>Pesquisar</a></li>
+              <li><a id='atualizarBD' href='#'>Atualizar BD</a></li>
+            </ul>
+          </div>
+  			
   			</div> 
     	</div>
 
-    	<div id='divLogin' class='panel' style='margin-top:8%; display:block'>
-    		<div class='row'>
+    	<div id='divLogin' class='panel' style='margin-top:8%; display:none'>
+    		<!--<div class='row'>
     			<center>
     				<img src='lib/img/icon.png' style='' /><br/><br/>
     			</center>
-    		</div>
+    		</div>-->
     		<div class='row'>
     			<div class='medium-5  small-12 medium-centered small-centered columns'>
     				<input type='text' value='geral@nota100.pt' placeholder='E-mail' id='email' />
@@ -58,7 +63,7 @@
     		<div class='row'>
     			<div class='medium-4 small-8 medium-centered small-centered columns'>
     				<center>
-    				<input type='button' class='small round button' value='Login' id='btLogin' />
+    				<input type='button' class='hollow  button' value='Login' id='btLogin' />
     				</center>
     			</div>
     		</div>
@@ -126,15 +131,14 @@
     <script type="text/javascript" src="lib/js/stats.js"></script>
     <script type="text/javascript" src="lib/js/search.js"></script>	
     <script type="text/javascript" src="lib/js/login.js"></script>
-	<script type="text/javascript" src="lib/js/perguntas.js"></script>		
-	<script type="text/javascript" src="lib/js/updateDB.js"></script>
+	  <script type="text/javascript" src="lib/js/perguntas.js"></script>		
+	  <script type="text/javascript" src="lib/js/updateDB.js"></script>
     <script type="text/javascript" src="lib/js/networkConnection.js"></script>
 
-	<script src="lib/foundation/js/vendor/jquery.min.js"></script>
+	  <script src="lib/foundation/js/vendor/jquery.min.js"></script>
     <script src="lib/foundation/js/vendor/what-input.min.js"></script>
     <script src="lib/foundation/js/foundation.min.js"></script>
     <script src="lib/foundation/js/app.js"></script>	
-
-        
+    
     </body>
 </html>
