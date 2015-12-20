@@ -1610,10 +1610,11 @@ label > [type='label'] {
 label {
   display: block;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.275rem;
   font-weight: normal;
   line-height: 1.8;
-  color: white; }
+  color: #2199e8; }
+  /*2199e8*/
   label.middle {
     margin: 0 0 1rem;
     padding: 0.5625rem 0; }
