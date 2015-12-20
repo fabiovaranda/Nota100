@@ -109,9 +109,12 @@
                 db.executeSql(query, [], function(res){                    
                     if (res.rows.item(0).a >= 1){
                         $('#divMenu').show();
+                        $('#divLogin').hide();
                         stats(db);
-                    }else
-                        $('#divLogin').show();
+                    }else{
+                      $('#divMenu').hide();
+                      $('#divLogin').show();
+                    }   
                 }, function(err){
                     alert(" user error " + err.message);
                 });
