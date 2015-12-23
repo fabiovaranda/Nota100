@@ -3153,7 +3153,7 @@ table.hover tr:nth-of-type(even):hover {
             transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem; 
+  padding: 1rem; 
 }
   .top-bar::before, .top-bar::after {
     content: ' ';
@@ -3163,8 +3163,9 @@ table.hover tr:nth-of-type(even):hover {
   .top-bar,
   .top-bar ul {
     background-color: #272822; }
-
+  
   .top-bar a {
+    font-size: 1.2rem;
     color: white; 
     }
   .top-bar input {

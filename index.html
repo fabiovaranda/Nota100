@@ -6,7 +6,6 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-
         <title>Nota100</title>
         <script src="lib/js/jquery-2.1.4.js"></script>
     		<link rel="stylesheet" href="lib/foundation/css/foundation.css" /> 
@@ -14,21 +13,20 @@
     </head>
     <body>  
 
-      <div class="title-bar" data-responsive-toggle="divMenu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle></button>
-        <div class="title-bar-title">Menu</div>
-      </div>
-
-    	<div id='divMenu' style='display:none; z-index:100'>
+      <div id='divMenu' style='display:none;'>
+        <div class="title-bar" data-responsive-toggle="divMenu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
     		<div class="top-bar">
           <div class="top-bar-left">
             <ul class="menu hide-for-small-only">
-              <li><a id='nota100' href='#'>Início</a></li>
-              <li><a id='perguntasFutebol' href='#'>Futebol</a></li>
-              <li><a id='perguntasFutebolIng' href='#'>Soccer</a></li>
-              <li><a id='perguntasFutsal' href='#'>Futsal</a></li>
-              <li><a id='pesquisar' href='#'>Pesquisar</a></li>
-              <li><a id='atualizarBD' href='#'>Atualizar BD</a></li>
+              <li id='liNota100'><center><a id='nota100' href='#'>Início</a></center></li>
+              <li id='liPerguntasFutebol'><center><a id='perguntasFutebol' href='#'>Futebol</a></center></li>
+              <li id='liPerguntasIng'><center><a id='perguntasFutebolIng' href='#'>Soccer</a></center></li>
+              <li id='liPerguntasFutsal'><center><a id='perguntasFutsal' href='#'>Futsal</a>/<center></li>
+              <li id='liPesquisar'><center><a id='pesquisar' href='#'>Pesquisar</a></center></li>
+              <li id='liAtualizarBD'><center><a id='atualizarBD' href='#'>Atualizar BD</a></center></li>
             </ul>
             <ul class="vertical menu hide-for-medium">
               <li><a id='nota100' href='#'>Início</a></li>
@@ -41,20 +39,25 @@
           </div>
   			
   			</div> 
+        <script>
+          var w = screen.width / 7;
+          $('#liNota100').width(w);
+          $('#liPerguntasFutebol').width(w);
+          $('#liPerguntasIng').width(w);
+          $('#liPerguntasFutsal').width(w);
+          $('#liPesquisar').width(w);
+          $('#liAtualizarBD').width(w);
+
+        </script>
     	</div>
 
     	<div id='divLogin' class='panel' style='margin-top:8%; display:none'>
-    		<!--<div class='row'>
-    			<center>
-    				<img src='lib/img/icon.png' style='' /><br/><br/>
-    			</center>
-    		</div>-->
     		<div class='row'>
     			<div class='medium-5  small-12 medium-centered small-centered columns'>
     				<input type='text' value='geral@nota100.pt' placeholder='E-mail' id='email' />
     			</div>
     		</div>
-			<div class='row'>
+			  <div class='row'>
     			<div class='medium-5  small-12 medium-centered small-centered columns'>
     				<input type='password' value='nota100' placeholder='Password' id='password' />
     			</div>
@@ -68,9 +71,7 @@
     		</div>
     	</div>
 		
-        <div id='mainDiv' class='row panel' style='display:none;'>
-        	
-        </div>        
+        <div id='mainDiv' class='row panel' style='display:none;'></div>        
 		
 		<script type="text/javascript" src="cordova.js"></script>
 		
@@ -124,13 +125,12 @@
 
       $('#nota100').click(function(){
         stats(db);
-        alert("screen.width " + screen.width);
+        /*alert("screen.width " + screen.width);
         alert("window.innerWidth " +  window.innerWidth);
         alert("screen.height " + screen.height);
-        alert("window.innerHeight " + window.innerHeight);
+        alert("window.innerHeight " + window.innerHeight);*/
         //checkConnection();
       });
-
       
 		</script>
 
