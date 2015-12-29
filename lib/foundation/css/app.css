@@ -139,6 +139,9 @@
 			font-size: 1.5rem;
 			height:80px;
 		}
+	input#btPesquisarPerguntas{
+		margin-top:0px;
+	}
 	.top-bar a{
 		font-size:1.5rem;
 		color: #2199e8;
@@ -196,6 +199,9 @@
 			font-size: 1.9rem;
 			height:80px;
 		}
+		input#btPesquisarPerguntas{
+		margin-top:0px;
+	}
 	.top-bar a{
 		font-size:2rem;
 		color: #2199e8;
@@ -262,6 +268,9 @@
 		margin-top: 50px;
 		font-size: 3.7rem;
 		height:160px;
+	}
+	input#btPesquisarPerguntas{
+		margin-top:0px;
 	}
 	.top-bar a{
 		font-size:3.5rem;
