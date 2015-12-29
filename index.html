@@ -12,66 +12,62 @@
     		<link rel="stylesheet" href="lib/foundation/css/app.css" />        
     </head>
     <body>  
-
-      <div id='divMenu' style='display:none;'>
-        <div class="title-bar" data-responsive-toggle="divMenu" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle></button>
-          <div class="title-bar-title">Menu</div>
-        </div>
+      
+      <div id='divMenu' style='display:block;'>        
     		<div class="top-bar">
           <div class="top-bar-left">
-            <ul class="menu hide-for-small-only">
-              <li id='liNota100'><center><a id='nota100' href='#'>Início</a></center></li>
-              <li id='liPerguntasFutebol'><center><a id='perguntasFutebol' href='#'>Futebol</a></center></li>
-              <li id='liPerguntasIng'><center><a id='perguntasFutebolIng' href='#'>Soccer</a></center></li>
-              <li id='liPerguntasFutsal'><center><a id='perguntasFutsal' href='#'>Futsal</a>/<center></li>
-              <li id='liPesquisar'><center><a id='pesquisar' href='#'>Pesquisar</a></center></li>
-              <li id='liAtualizarBD'><center><a id='atualizarBD' href='#'>Atualizar BD</a></center></li>
-            </ul>
-            <ul class="vertical menu hide-for-medium">
-              <li><a id='nota100' href='#'>Início</a></li>
-              <li><a id='perguntasFutebol' href='#'>Futebol</a></li>
-              <li><a id='perguntasFutebolIng' href='#'>Soccer</a></li>
-              <li><a id='perguntasFutsal' href='#'>Futsal</a></li>
-              <li><a id='pesquisar' href='#'>Pesquisar</a></li>
-              <li><a id='atualizarBD' href='#'>Atualizar BD</a></li>
+            <ul class="menu ">
+              <li id='liNota100'><center><a id='nota100' href='#'>início</a></center></li>
+              <li id='liPerguntasFutebol'><center><a id='perguntasFutebol' href='#'>futebol</a></center></li>
+              <li id='liPerguntasIng'><center><a id='perguntasFutebolIng' href='#'>soccer</a></center></li>
+              <li id='liPerguntasFutsal'><center><a id='perguntasFutsal' href='#'>futsal</a>/<center></li>
+              <li id='liPesquisar'><center><a id='pesquisar' href='#'>pesquisar</a></center></li>
+              <li id='liAtualizarBD'><center><a id='atualizarBD' href='#'>atualizar</a></center></li>
             </ul>
           </div>
-  			
   			</div> 
-        <script>
-          var w = screen.width / 7;
-          $('#liNota100').width(w);
-          $('#liPerguntasFutebol').width(w);
-          $('#liPerguntasIng').width(w);
-          $('#liPerguntasFutsal').width(w);
-          $('#liPesquisar').width(w);
-          $('#liAtualizarBD').width(w);
-
-        </script>
     	</div>
 
-    	<div id='divLogin' class='panel' style='margin-top:8%; display:none'>
-    		<div class='row'>
-    			<div class='medium-5  small-12 medium-centered small-centered columns'>
-    				<input type='text' value='geral@nota100.pt' placeholder='E-mail' id='email' />
-    			</div>
-    		</div>
-			  <div class='row'>
-    			<div class='medium-5  small-12 medium-centered small-centered columns'>
-    				<input type='password' value='nota100' placeholder='Password' id='password' />
-    			</div>
-    		</div>
-    		<div class='row'>
-    			<div class='medium-4 small-8 medium-centered small-centered columns'>
-    				<center>
-    				<input type='button' class='hollow  button' value='Login' id='btLogin' />
-    				</center>
-    			</div>
-    		</div>
-    	</div>
+    	   <div id='divLogin' style='display:none'>
+          <div class='row'>
+            <div class='large-8 large-centered columns'>              
+              <input type='text' value='geral@nota100.pt' placeholder='E-mail' id='email' style="text-align:center" />
+            </div>
+          </div>
+          <div class='row'>
+            <div class='large-8 large-centered columns'>
+              <input type='password' value='nota100' placeholder='Password' id='password' style="text-align:center" />
+            </div>
+          </div>
+          <div class='row'>
+            <div class='medium-4 small-8 medium-centered small-centered columns'>
+              <center>
+              <input type='button' class='hollow  button' value='login' id='btLogin' />
+              </center>
+            </div>
+          </div>
+        </div>
 		
-        <div id='mainDiv' class='row panel' style='display:none;'></div>        
+        <div id='mainDiv' class='row panel' style='display:block;'>
+            
+     <div class='row' style='margin-top:8%'>
+          <div class='medium-8 medium-centered small-8 small-centered large-6 large-centered columns'>
+              <center>
+                <select id='tabela' >
+                    <option value='perguntas' >futebol</option>
+                    <option value='perguntasIngles'>soccer</option>
+                    <option value='perguntasFutsal'>futsal</option>
+                </select>
+              </center>
+              </div>
+              <div class='medium-12 large-12 small-12 columns'>
+                  <center>
+                  <input id='btAtualizarBD' type='button' value='atualizar' class='hollow button'/>
+              </center></div>
+        <div class='medium-3 columns'>&nbsp;</div>
+          </div>
+
+        </div>        
 		
 		<script type="text/javascript" src="cordova.js"></script>
 		
@@ -125,11 +121,6 @@
 
       $('#nota100').click(function(){
         stats(db);
-        /*alert("screen.width " + screen.width);
-        alert("window.innerWidth " +  window.innerWidth);
-        alert("screen.height " + screen.height);
-        alert("window.innerHeight " + window.innerHeight);*/
-        //checkConnection();
       });
       
 		</script>
