@@ -22,10 +22,6 @@
 	<preference name="android-build-tool" value="gradle" />
 	<preference name="android-minSdkVersion" value="15" />
 
-	<preference name="SplashScreen" value="splash"/>
-	<preference name="SplashScreenDelay" value="2000" />
-	<preference name="SplashMaintainAspectRatio" value="no" />
-
 	<!-- Permissions -->
 	<feature name="http://api.phonegap.com/1.0/device"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
@@ -60,11 +56,7 @@
 		<icon src="lib/img/iconHDPI.png" gap:platform="android" gap:density="hdpi" />
 		<icon src="lib/img/iconXHDPI.png" gap:platform="android" gap:density="xhdpi" />
 
-		<!-- splashscreen -->
-	  	<splash src='lib/img/iconLDPI.png'  gap:platform="android" gap:qualifier="ldpi"/>
-	  	<splash src='lib/img/iconMDPI.png'  gap:platform="android" gap:qualifier="mdpi"/>
-		<splash src='lib/img/iconHDPI.png'  gap:platform="android" gap:qualifier="hdpi"/>
-		<splash src='lib/img/iconXHDPI.png'  gap:platform="android" gap:qualifier="xhdpi"/> 
+		
 	</platform>	
 		
 </widget>
