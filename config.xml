@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.w3.org/ns/widgets"
-	xmlns:gap   = "http://phonegap.com/ns/1.0"
+<widget 
+	xmlns:gap   = "http://www.nota100.pt"
 	id          = "pt.fabiovaranda.app"
 	version 	= "1.0.0">
 
@@ -34,6 +34,7 @@
 	<allow-navigation href="*" />
 
 	<!-- Plugins -->
+
 	<gap:plugin name="cordova-plugin-device" source="npm" version="1.0.1" />
 	<gap:plugin name="cordova-plugin-dialogs" source="npm" version="1.1.1" />
 	<gap:plugin name="cordova-plugin-geolocation" source="npm" version="1.0.1" />
@@ -48,6 +49,7 @@
 	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 	<gap:plugin name="cordova-plugin-progress-indicator" source="npm" />
 	<gap:plugin name="cordova-plugin-network-information" source="npm" />
+	<gap:plugin name="de.mobilino.phonegap.androidlicenseplugin" spec="1.0.0" source="pgb" />
 	
 	<platform name="android">
 		<!-- Icons -->
