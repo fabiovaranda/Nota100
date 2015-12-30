@@ -2,7 +2,7 @@
 <widget 
 	xmlns:gap   = "http://www.nota100.pt"
 	id          = "pt.fabiovaranda.app"
-	version 	= "1.0.0">
+	version 	= "1.0.1">
 
 	<!-- App info -->
 	<name>Nota100</name>
