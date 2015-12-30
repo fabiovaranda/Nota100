@@ -239,6 +239,9 @@
 	label{
 		font-size: 3.7rem;
 	}
+	img{
+		width: 50px;
+	}
 	select{
 		width:50rem;
 		color:#2199e8;
